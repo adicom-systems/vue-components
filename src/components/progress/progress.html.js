@@ -1,0 +1,1 @@
+export default ('<div class="progress"><div class="progress-bar" :class="&quot;progress-bar-&quot; + color" :aria-valuenow="value" :style="{&quot;width&quot;: value + &quot;%&quot; }" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em">{{ value }}%</div></div>');

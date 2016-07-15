@@ -1,0 +1,21 @@
+{
+  "name": "vue-components",
+  "dependencies": {
+    "gulp": "registry:npm/gulp#4.0.0-alpha.2+20160618213436"
+  },
+  "globalDependencies": {
+    "bootstrap": "registry:dt/bootstrap#3.3.5+20160619023404",
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
+    "moment": "registry:dt/moment#2.8.0+20160316155526",
+    "vue": "registry:dt/vue#1.0.21+20160423143248"
+  },
+  "globalDevDependencies": {
+    "gulp-concat": "registry:dt/gulp-concat#0.0.0+20160316155526",
+    "gulp-less": "registry:dt/gulp-less#0.0.0+20160316155526",
+    "gulp-rename": "registry:dt/gulp-rename#0.0.0+20160316155526",
+    "gulp-uglify": "registry:dt/gulp-uglify#0.0.0+20160316155526",
+    "run-sequence": "registry:dt/run-sequence#0.0.0+20160316155526",
+    "vinyl-buffer": "registry:dt/vinyl-buffer#0.0.0+20160316155526",
+    "vinyl-source-stream": "registry:dt/vinyl-source-stream#0.0.0+20160316155526"
+  }
+}

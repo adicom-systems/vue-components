@@ -1,0 +1,11 @@
+﻿.panel( :class='[ "panel-" + panelClass ]')
+  .panel-heading(v-show='!$els.headingDefault || heading')
+    slot(name='heading'): span(v-el:heading-default) {{ heading }}
+
+  .panel-body(v-show='!$els.bodyDefault')
+    slot: span(v-el:body-default)
+
+  slot(name='post-body')
+  
+  .panel-footer(v-show='!$els.footerDefault || footer')
+    slot(name='footer'): span(v-el:footer-default) {{ footer }}
