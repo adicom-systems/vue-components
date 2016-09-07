@@ -2,6 +2,8 @@ const defaultFormat = 'YYYY-MM-DD'
 
 export default {
   read: function (val, format) {
+    if (typeof val !== 'undefined' || val === null)
+      return null
     const m = moment(val)
     return m.isValid() ? m.format(format || defaultFormat) : null
   },

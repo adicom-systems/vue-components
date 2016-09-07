@@ -20,6 +20,7 @@
 
   var moment$1 = {
     read: function read(val, format) {
+      if (typeof val !== 'undefined' || val === null) return null;
       var m = moment(val);
       return m.isValid() ? m.format(format || defaultFormat) : null;
     },
@@ -53,7 +54,7 @@
     }
   });
 
-  var JsonFormatter = JSONFormatter.default;
+  var JsonFormatter = JSONFormatter ? JSONFormatter.default : null;
 
   var JsonView = Vue.extend({
     template: '<div></div>',
@@ -73,6 +74,10 @@
 
     methods: {
       update: function update() {
+        if (!JsonFormatter) {
+          console.warn('JsonFormatter is not found');
+          return;
+        }
         var formatter = new JsonFormatter(this.json);
         this.$el.innerHTML = '';
         this.$el.appendChild(formatter.render());

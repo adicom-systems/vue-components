@@ -1,6 +1,6 @@
 {
   "name": "adicom-vue-components",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Common vue.js components",
   "dependencies": {},
   "devDependencies": {
