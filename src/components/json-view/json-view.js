@@ -5,19 +5,19 @@ var JsonView = Vue.extend({
   props: ['json'],
   watch: {
     'json': {
-      handler: function() {
+      handler() {
         this.update()
       },
       deep: true,
     }
   },
 
-  ready: function() {
+  ready() {
     this.update()
   },
 
   methods: {
-    update: function() {
+    update() {
       if (!JsonFormatter)
       {
         console.warn('JsonFormatter is not found')

@@ -20,10 +20,11 @@
 
   var moment$1 = {
     read: function read(val, format) {
-      if (typeof val !== 'undefined' || val === null) return null;
+      if (typeof val === 'undefined' || val === null) return null;
       var m = moment(val);
       return m.isValid() ? m.format(format || defaultFormat) : null;
     },
+
     write: function write(val, old, format) {
       return moment.utc(val, format || defaultFormat).toDate();
     }
@@ -64,6 +65,7 @@
         handler: function handler() {
           this.update();
         },
+
         deep: true
       }
     },
