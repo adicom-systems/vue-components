@@ -4,16 +4,17 @@
   "authors": [
     "Ivan Samoylenko <isamoylenko@adicom.ru>"
   ],
-
   "dependencies": {
     "vue": "^1.0.24",
     "moment": "^2.13.0",
     "bootstrap": "^3.3.6",
     "json-formatter": "mohsen1/json-formatter-js#c86ff81c02d18145bc11545d169f502388218403"
   },
-
   "description": "Common Vue.js components",
-  "main": [ "dist/adicom-vue-components.js", "adicom-vue-components.css" ],
+  "main": [
+    "dist/adicom-vue-components.js",
+    "dist/adicom-vue-components.css"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
